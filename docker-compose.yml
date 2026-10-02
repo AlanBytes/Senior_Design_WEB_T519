@@ -1,0 +1,31 @@
+services:
+  # Production build: docker compose up --build  ->  http://localhost:3000
+  web:
+    build: .
+    image: t5xx-website
+    container_name: t5xx-website
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+
+  # Hot-reload dev server: docker compose --profile dev up dev  ->  http://localhost:3001
+  dev:
+    profiles: ["dev"]
+    image: node:24-alpine
+    container_name: t5xx-website-dev
+    working_dir: /app
+    command: sh -c "npm install && npm run dev -- -H 0.0.0.0 -p 3000"
+    ports:
+      - "3001:3000"
+    environment:
+      - WATCHPACK_POLLING=true
+      - CHOKIDAR_USEPOLLING=true
+      - NEXT_TELEMETRY_DISABLED=1
+    volumes:
+      - .:/app
+      - dev_node_modules:/app/node_modules
+      - dev_next:/app/.next
+
+volumes:
+  dev_node_modules:
+  dev_next:
