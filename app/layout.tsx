@@ -15,9 +15,9 @@ const barlow = Barlow_Condensed({
 });
 
 export const metadata: Metadata = {
-  title: "Interactive Automated Kitting and Fulfillment System | T520",
+  title: "Interactive Automated Kitting and Fulfillment System | T519",
   description:
-    "T520 senior design project at the FAMU-FSU College of Engineering, 2026–2027, sponsored by Rockwell Automation: a portable automated system that kits, verifies, packages, and labels LEGO-style builds.",
+    "T519 senior design project at the FAMU-FSU College of Engineering, 2026–2027, sponsored by Rockwell Automation: a portable automated system that kits, verifies, packages, and labels LEGO-style builds.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

@@ -4,7 +4,7 @@
 // ---------------------------------------------------------------------------
 
 export const site = {
-  teamName: "T520",
+  teamName: "T519",
   projectTitle: "Interactive Automated Kitting and Fulfillment System",
   // Hero title split into lines; the middle line gets the red→orange gradient.
   titleLines: ["Interactive Automated", "Kitting & Fulfillment", "System"],
@@ -108,5 +108,5 @@ export const footer = {
     "https://www.google.com/maps?q=FAMU-FSU+College+of+Engineering,+2525+Pottsdamer+St,+Tallahassee,+FL+32310&output=embed",
   directions:
     "https://www.google.com/maps/dir/?api=1&destination=FAMU-FSU+College+of+Engineering+2525+Pottsdamer+St+Tallahassee+FL+32310",
-  copyright: "© 2026–2027 T520 Website. All rights reserved.",
+  copyright: "© 2026–2027 T519 Website. All rights reserved.",
 };

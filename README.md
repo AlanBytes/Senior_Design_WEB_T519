@@ -1,4 +1,4 @@
-# T520 — Interactive Automated Kitting and Fulfillment System
+# T519 — Interactive Automated Kitting and Fulfillment System
 
 Senior design project website, FAMU-FSU College of Engineering, 2026–2027.
 Built with Next.js 16, Tailwind CSS 4 and Framer Motion.
